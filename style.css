@@ -339,10 +339,10 @@ ion-icon[name="chevron-forward-circle"] {
     .conteudo {
         background-color: #FAFAFA;
         margin: 0 auto;
-        width: 900px;
+        width: 100%
     }
     header {
-        width: 900px;
+        width: 100%;
         margin: 0 auto;
     }
     .conteudo-menu {
