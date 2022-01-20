@@ -38,6 +38,10 @@ header .conteudo-menu {
     align-items: center;
 }
 
+.logo-mobile {
+    display: none;
+}
+
 .caixa-de-pesquisa {
     width: 215px;
     height: 28px;
@@ -77,6 +81,17 @@ hr {
 
 .menu img {
     height: 22px;
+}
+
+.footer {
+    display: none;
+    width: 100%;
+    position: fixed;
+    height: 54px;
+    bottom: 0;
+    background-color: #FFFFFF;
+    z-index: 1;
+    border: 1px solid #DBDBDB;
 }
 
 .conteudo {
@@ -339,7 +354,7 @@ ion-icon[name="chevron-forward-circle"] {
     .conteudo {
         background-color: #FAFAFA;
         margin: 0 auto;
-        width: 100%
+        width: 100%;
     }
     header {
         width: 100%;
@@ -364,22 +379,57 @@ ion-icon[name="chevron-forward-circle"] {
 
 @media (max-width:614px) {
     .conteudo {
-        max-width: 612px;
+        width: 100%;
     }
     .principal {
         width: 100%;
+        margin-bottom: 54px;
     }
     .posts {
         width: 100%;
     }
     .post {
         width: 100%;
+        margin-right: 0;
+        margin-left: 0;
     }
     .stories {
         margin: 0;
         border: none;
     }
-    ion-icon[name="chevron-forward-circle"] {
+    .barra-logo a {
         display: none;
+    }
+    .divisoria-logo {
+        display: none;
+    }
+    .caixa-de-pesquisa {
+        display: none;
+    }
+    .logo-mobile {
+        display: flex;
+        align-items: center;
+    }
+    .menu ion-icon[name="chevron-forward-circle"] {
+        display: none;
+    }
+    .menu ion-icon[name="compass-outline"] {
+        display: none;
+    }
+    .menu ion-icon[name="heart-outline"] {
+        display: none;
+    }
+    .menu ion-icon[name="person-outline"] {
+        display: none;
+    }
+    .menu {
+        display: flex;
+        justify-content: flex-end;
+    }
+    .footer {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-around;
     }
 }
