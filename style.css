@@ -6,7 +6,7 @@ body {
 header {
     /* position: fixed; */
     background-color: #FFFFFF;
-    width: 1366px;
+    width: 100%;
     height: 54px;
     border-bottom: 1px solid #DBDBDB;
     position: sticky;
@@ -96,15 +96,15 @@ hr {
 
 .conteudo {
     background-color: #FAFAFA;
-    width: 1366px;
+    width: 100%;
     height: 2000px;
     display: flex;
     overflow: hidden;
+    justify-content: center;
 }
 
 .principal {
     width: 614px;
-    margin: 0 auto;
     height: 2000px;
     background-color: #FAFAFA;
     margin-right: 30px;
@@ -127,13 +127,7 @@ hr {
 
 ion-icon[name="chevron-forward-circle"] {
     font-size: 40px;
-    /* filter: invert(100%); */
-}
-
-.seta {
-    display: flex;
-    align-items: center;
-    z-index: 1;
+    filter: invert(100%);
 }
 
 .stories-a-mais {
@@ -143,6 +137,13 @@ ion-icon[name="chevron-forward-circle"] {
     align-items: center;
     font-weight: 400;
     margin-left: 14px;
+    position: relative;
+}
+
+.seta {
+    position: absolute;
+    z-index: 1;
+    right: 40px;
 }
 
 .storie {
@@ -197,7 +198,6 @@ ion-icon[name="chevron-forward-circle"] {
 }
 
 .dots {
-    margin-left: 455px;
     font-size: 16px;
 }
 
@@ -252,7 +252,6 @@ ion-icon[name="chevron-forward-circle"] {
 
 .sidebar {
     width: 293px;
-    margin-right: 216px;
     margin-top: 57px;
     background-color: #FAFAFA;
 }
