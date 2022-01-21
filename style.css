@@ -182,6 +182,12 @@ ion-icon[name="chevron-forward-circle"] {
     height: 61px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+}
+
+.dots {
+    font-size: 20px;
+    margin-right: 20px;
 }
 
 .post .top-post img {
@@ -195,10 +201,7 @@ ion-icon[name="chevron-forward-circle"] {
     text-decoration: none;
     color: #262626;
     margin-left: 15px;
-}
-
-.dots {
-    font-size: 16px;
+    margin-right: auto;
 }
 
 .post img {
@@ -236,7 +239,8 @@ ion-icon[name="chevron-forward-circle"] {
 .curtidas img {
     width: 20px;
     height: 20px;
-    margin-right: 5px;
+    margin-right: 6px;
+    margin-bottom: 2px;
 }
 
 .posts .post .curtidas strong {
@@ -347,7 +351,7 @@ ion-icon[name="chevron-forward-circle"] {
 }
 
 
-/* ---------------------------------RESOLUÇÃO < 935 ----------------------------------- */
+/* ---------------------------------RESOLUÇÃO < 935px ----------------------------------- */
 
 @media (max-width:935px) {
     .conteudo {
@@ -379,18 +383,33 @@ ion-icon[name="chevron-forward-circle"] {
 @media (max-width:614px) {
     .conteudo {
         width: 100%;
+        height: 100%;
     }
     .principal {
         width: 100%;
+        height: 100%;
         margin-bottom: 54px;
     }
     .posts {
         width: 100%;
+        height: 100%;
     }
     .post {
         width: 100%;
+        height: 100%;
         margin-right: 0;
         margin-left: 0;
+    }
+    .post img {
+        width: 100%;
+        height: 100%;
+    }
+    .post .curtidas img {
+        width: 20px;
+        height: 20px;
+    }
+    .post .curtidas {
+        margin-bottom: 10px;
     }
     .stories {
         margin: 0;
@@ -419,6 +438,9 @@ ion-icon[name="chevron-forward-circle"] {
         display: none;
     }
     .menu ion-icon[name="person-outline"] {
+        display: none;
+    }
+    .seta {
         display: none;
     }
     .menu {
